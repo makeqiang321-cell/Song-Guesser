@@ -6,6 +6,9 @@
 <title>Hip-Hop Guessable Songs | Song Guesser</title>
 <meta name="description" content="Name the hip-hop guessable songs from a 0.1-second clip. Free browser game with 631 Hip-Hop guessable songs — reveal 0.5s, 2s, 8s and 15s only when you need more." />
 <link rel="canonical" href="https://www.songguesser.co/guessable-songs/hip-hop/" />
+<link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+<link rel="icon" type="image/png" sizes="512x512" href="/images/logo.png" />
+<link rel="apple-touch-icon" href="/images/logo.png" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Hip-Hop Guessable Songs | Song Guesser" />
 <meta property="og:description" content="Name the hip-hop guessable songs from a 0.1-second clip. Free browser game with 631 Hip-Hop guessable songs — reveal 0.5s, 2s, 8s and 15s only when you need more." />
@@ -13,6 +16,10 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Hip-Hop Guessable Songs | Song Guesser" />
 <meta name="twitter:description" content="Name the hip-hop guessable songs from a 0.1-second clip. Free browser game with 631 Hip-Hop guessable songs — reveal 0.5s, 2s, 8s and 15s only when you need more." />
+<meta property="og:image" content="https://www.songguesser.co/images/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:image" content="https://www.songguesser.co/images/og.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,700;1,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -40,7 +47,7 @@ button{font-family:inherit}
 .songspot-site-header{position:sticky;top:0;z-index:50;height:64px;color:#f3f7f4;background:#030704f5;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid #ffffff13}
 .songspot-site-header-inner{display:grid;grid-template-columns:minmax(180px,1fr) auto minmax(180px,1fr);align-items:center;width:min(1120px,100% - 48px);height:100%;margin:0 auto}
 .songspot-site-brand{display:inline-flex;align-items:center;gap:10px;width:fit-content;text-decoration:none;color:#f5f9f6f0}
-.songspot-site-brand .logo{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--song-accent);color:var(--song-accent-on);font-size:16px;font-weight:800;font-style:italic}
+.songspot-site-brand .logo{width:30px;height:30px;border-radius:8px;display:block;flex:none}
 .songspot-site-brand span{font-size:19px;font-style:italic;font-weight:800;letter-spacing:.015em}
 .songspot-site-desktop-nav{display:flex;justify-content:center;align-items:center;gap:4px;height:100%}
 .songspot-site-nav-link{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:999px;color:#e2eae49e;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:color .16s,background .16s}
@@ -321,6 +328,9 @@ button{font-family:inherit}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.songguesser.co/"}]}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Song Guesser","url":"https://www.songguesser.co/","logo":{"@type":"ImageObject","url":"https://www.songguesser.co/images/logo.png","width":512,"height":512}}
+</script>
 <style>.songspot-song-cloud{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:6px 0 0}.songspot-song-cloud li{background:#0b2415;border:1px solid #19df7055;color:#d6f6e1;border-radius:999px;padding:8px 16px;font-size:14px;line-height:1.4}.songspot-song-cloud li b{color:#19df70;font-weight:600}.songspot-song-cloud a{color:#d6f6e1;text-decoration:none}.songspot-song-cloud a:hover{color:#19df70}.songspot-seo-section+.songspot-seo-section{border-top:1px solid #ffffff0f}</style>
 </head>
 <body>
@@ -328,7 +338,7 @@ button{font-family:inherit}
 <header class="songspot-site-header">
   <div class="songspot-site-header-inner">
     <a class="songspot-site-brand" href="/" aria-label="Song Guesser — Play">
-      <span class="logo">SG</span><span>Song Guesser</span>
+      <img class="logo" src="/images/logo.svg" alt="" width="30" height="30" /><span>Song Guesser</span>
     </a>
     <nav class="songspot-site-desktop-nav" aria-label="Song Guesser navigation">
       <a class="songspot-site-nav-link active" href="/">Play</a>
@@ -524,7 +534,7 @@ button{font-family:inherit}
 <section class="songspot-seo">
 <section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">What they are</p><h2>What Are Hip-Hop Guessable Songs?</h2></div><p>Hip-hop lives in the first beat of the loop. A tenth of a second can give you the snare pattern, the 808, or a producer tag before the rapper even clears their throat — and that's usually enough to name the track.</p><p>The 631-track pool runs from boom-bap to trap to whatever's charting now, so the drum pattern alone won't always place the era. You have to read the sample and the mix too: a dusty loop says one decade, a rattling hi-hat says another.</p><p>It's a Heardle-style song guessing game driven by the beat and the bar — the flow only confirms what the drums already told you.</p></section>
 <section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Turn the dial</p><h2>Choose Your Challenge</h2><p>The dial is a depth gauge — from the records everyone can quote to the mixtape cuts only the heads still own.</p></div><div class="songspot-feature-grid"><article><span class="icon">🟢</span><h3>Easy</h3><p>Open with the twelve tracks the block already knows, spotted from the first looped sample.</p></article><article><span class="icon">🟡</span><h3>Medium</h3><p>Widen it to twenty-five and the slept-on follow-ups start showing up next to the smashes.</p></article><article><span class="icon">🟠</span><h3>Hard</h3><p>Fifty records now, where a producer tag or a drum pattern is all you get to place the era.</p></article><article><span class="icon">🔴</span><h3>Expert</h3><p>Same fifty, thinner air: solve it from the hi-hat hiss before the drums lock.</p></article><article><span class="icon">💀</span><h3>Impossible</h3><p>A tenth of a second of a sample flip, no runway — and you are on your own.</p></article></div></section>
-<section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Game highlights</p><h2>The Hip-Hop Song Pool</h2></div><p>The production is the tell on every hip-hop track: a dusty loop, a boom-bap kick, a rattling trap hi-hat. When you want to roam outside the genre, the <a href='/'>song guesser</a> opens every lane at once.</p><ul class="songspot-song-cloud"><li><b>Can't Hold Us (feat. Ray Dalton)</b> — Macklemore &amp; Ryan Lewis</li><li><b>Good Old Days (feat. Kesha)</b> — Macklemore</li><li><b>Same Love (feat. Mary Lambert)</b> — Macklemore &amp; Ryan Lewis</li><li><b>Sunflower (Spider-Man: Into the Spider-Verse)</b> — Post Malone &amp; Swae Lee</li><li><b>Jump Around</b> — House of Pain</li><li><b>Hell At Night</b> — BigXthaPlug &amp; Ella Langley</li><li><b>All I Do Is Win (feat. T-Pain, Ludacris, Snoop Dogg &amp; Rick Ross)</b> — DJ Khaled</li><li><b>Gangsta's Paradise (feat. L.V.)</b> — Coolio</li></ul></section>
+<section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Game highlights</p><h2>The Hip-Hop Song Pool</h2></div><p>The production is the tell on every hip-hop track: a dusty loop, a boom-bap kick, a rattling trap hi-hat. When you want to roam outside the genre, the <a href='/'>song guesser</a> opens every lane at once.</p><ul class="songspot-song-cloud"><li><b>Can't Hold Us (feat. Ray Dalton)</b> — Macklemore &amp; Ryan Lewis</li><li><b>Good Old Days (feat. Kesha)</b> — Macklemore</li><li><b>Same Love (feat. Mary Lambert)</b> — Macklemore &amp; Ryan Lewis</li><li><b>Sunflower (Spider-Man: Into the Spider-Verse)</b> — Post Malone &amp; Swae Lee</li><li><b>Jump Around</b> — House of Pain</li><li><b>Gangsta's Paradise (feat. L.V.)</b> — Coolio</li><li><b>Hell At Night</b> — BigXthaPlug &amp; Ella Langley</li><li><b>All I Do Is Win (feat. T-Pain, Ludacris, Snoop Dogg &amp; Rick Ross)</b> — DJ Khaled</li></ul></section>
 <section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Train the ear</p><h2>What to Listen For</h2></div><div class="songspot-feature-grid"><article><span class="icon">🎛️</span><h3>Trust the sample</h3><p>Most classic records open on a recognizable loop — a soul chop, a piano stab, a vinyl crackle — and the sample usually outruns the rapper to the answer.</p></article><article><span class="icon">🥁</span><h3>Read the drum era</h3><p>Dusty boom-bap and rattling trap hi-hats are decades apart. The swing of the first beat is a more honest date than the lyrics.</p></article><article><span class="icon">🎤</span><h3>Catch the first ad-lib</h3><p>A signature ad-lib or a producer tag is the modern credit reel. Lock it and the title is often already half-typed.</p></article></div></section>
 <section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">How to play</p><h2>How to Play the Hip-Hop Quiz</h2></div><p>Let the first beat talk. Type your guess the moment the sample or the hi-hat feels familiar, and ask for more audio only when the era won't place itself.</p></section>
 <section id="faq" class="songspot-seo-section songspot-seo-faq"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Questions about this quiz</p><h2>Hip-Hop song quiz FAQ</h2></div><div class="songspot-faq-list"><details open><summary>What should I listen for in a hip-hop clip?</summary><p>The drum pattern and the sample first. A dusty loop, a boom-bap kick or a rattling trap hi-hat usually places the era before the rapper does.</p></details><details><summary>How many hip-hop guessable songs are in the rotation?</summary><p>631 tracks, from boom-bap classics to the current chart. The pool mixes eras so the opening beat is always a fresh test.</p></details><details><summary>Can I play only hip-hop?</summary><p>Yes — pick Hip-Hop and every round stays inside the genre. Head to the <a href='/'>song guesser</a> when you want to mix it with pop, R&B or anything else.</p></details></div></section>

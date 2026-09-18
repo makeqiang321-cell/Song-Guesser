@@ -6,6 +6,9 @@
 <title>R&B Guessable Songs | Song Guesser</title>
 <meta name="description" content="Name the r&b guessable songs from a 0.1-second clip. Free browser game with 801 R&B guessable songs — reveal 0.5s, 2s, 8s and 15s only when you need more." />
 <link rel="canonical" href="https://www.songguesser.co/guessable-songs/r-and-b/" />
+<link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+<link rel="icon" type="image/png" sizes="512x512" href="/images/logo.png" />
+<link rel="apple-touch-icon" href="/images/logo.png" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="R&B Guessable Songs | Song Guesser" />
 <meta property="og:description" content="Name the r&b guessable songs from a 0.1-second clip. Free browser game with 801 R&B guessable songs — reveal 0.5s, 2s, 8s and 15s only when you need more." />
@@ -13,6 +16,10 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="R&B Guessable Songs | Song Guesser" />
 <meta name="twitter:description" content="Name the r&b guessable songs from a 0.1-second clip. Free browser game with 801 R&B guessable songs — reveal 0.5s, 2s, 8s and 15s only when you need more." />
+<meta property="og:image" content="https://www.songguesser.co/images/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:image" content="https://www.songguesser.co/images/og.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,700;1,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -40,7 +47,7 @@ button{font-family:inherit}
 .songspot-site-header{position:sticky;top:0;z-index:50;height:64px;color:#f3f7f4;background:#030704f5;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid #ffffff13}
 .songspot-site-header-inner{display:grid;grid-template-columns:minmax(180px,1fr) auto minmax(180px,1fr);align-items:center;width:min(1120px,100% - 48px);height:100%;margin:0 auto}
 .songspot-site-brand{display:inline-flex;align-items:center;gap:10px;width:fit-content;text-decoration:none;color:#f5f9f6f0}
-.songspot-site-brand .logo{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--song-accent);color:var(--song-accent-on);font-size:16px;font-weight:800;font-style:italic}
+.songspot-site-brand .logo{width:30px;height:30px;border-radius:8px;display:block;flex:none}
 .songspot-site-brand span{font-size:19px;font-style:italic;font-weight:800;letter-spacing:.015em}
 .songspot-site-desktop-nav{display:flex;justify-content:center;align-items:center;gap:4px;height:100%}
 .songspot-site-nav-link{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:999px;color:#e2eae49e;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:color .16s,background .16s}
@@ -321,6 +328,9 @@ button{font-family:inherit}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.songguesser.co/"}]}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Song Guesser","url":"https://www.songguesser.co/","logo":{"@type":"ImageObject","url":"https://www.songguesser.co/images/logo.png","width":512,"height":512}}
+</script>
 <style>.songspot-song-cloud{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:6px 0 0}.songspot-song-cloud li{background:#0b2415;border:1px solid #19df7055;color:#d6f6e1;border-radius:999px;padding:8px 16px;font-size:14px;line-height:1.4}.songspot-song-cloud li b{color:#19df70;font-weight:600}.songspot-song-cloud a{color:#d6f6e1;text-decoration:none}.songspot-song-cloud a:hover{color:#19df70}.songspot-seo-section+.songspot-seo-section{border-top:1px solid #ffffff0f}</style>
 </head>
 <body>
@@ -328,7 +338,7 @@ button{font-family:inherit}
 <header class="songspot-site-header">
   <div class="songspot-site-header-inner">
     <a class="songspot-site-brand" href="/" aria-label="Song Guesser — Play">
-      <span class="logo">SG</span><span>Song Guesser</span>
+      <img class="logo" src="/images/logo.svg" alt="" width="30" height="30" /><span>Song Guesser</span>
     </a>
     <nav class="songspot-site-desktop-nav" aria-label="Song Guesser navigation">
       <a class="songspot-site-nav-link active" href="/">Play</a>
@@ -524,7 +534,7 @@ button{font-family:inherit}
 <section class="songspot-seo">
 <section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">What they are</p><h2>What Are R&amp;B Guessable Songs?</h2></div><p>R&B is the genre of the run — a voice bending a note before the beat even lands. A tenth of a second is often just that: a breath at the mic, the start of a melisma, a warm chord. If you know the voice, you've already got the song.</p><p>The 801-song pool spans quiet-storm slow jams to current R&B, so a round can lean on the singer, the chord bed, or the pocket of the groove. Some tracks give themselves away on the first hum.</p><p>It's a Heardle-style song guessing game where the clue is texture — a breath, a chord, a run — not a lyric.</p></section>
 <section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Turn the dial</p><h2>Choose Your Challenge</h2><p>Deeper just means further from the wedding-playlist staples, toward the quiet-storm album cuts.</p></div><div class="songspot-feature-grid"><article><span class="icon">🟢</span><h3>Easy</h3><p>Ease in with the twelve songs the room already knows, caught the moment the first vocal run bends.</p></article><article><span class="icon">🟡</span><h3>Medium</h3><p>Push to twenty-five and the charted-but-forgotten singles come back into the rotation.</p></article><article><span class="icon">🟠</span><h3>Hard</h3><p>Now fifty, and the chord color alone has to tell you which slow jam is playing.</p></article><article><span class="icon">🔴</span><h3>Expert</h3><p>That same fifty, but you solve from the breath before the run — the melody is still unannounced.</p></article><article><span class="icon">💀</span><h3>Impossible</h3><p>The sliver holds at a tenth of a second and the fifty give up nothing for free.</p></article></div></section>
-<section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Game highlights</p><h2>The R&amp;B Song Pool</h2></div><p>R&B rewards an ear that knows a voice as well as a hook — its 801 tracks lean on tone over texture. When you're ready to switch lanes, the <a href='/'>song guesser</a> is every genre on one page.</p><ul class="songspot-song-cloud"><li><b>September</b> — Earth, Wind &amp; Fire</li><li><b>Let's Groove</b> — Earth, Wind &amp; Fire</li><li><b>Easy Lover</b> — Philip Bailey &amp; Phil Collins</li><li><b>Unpretty</b> — TLC</li><li><b>Ain't Nobody</b> — Chaka Khan</li><li><b>Call Me</b> — Blondie</li><li><b>Unapologetic</b> — Queen Butterfly</li><li><b>No Scrubs</b> — TLC</li></ul></section>
+<section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Game highlights</p><h2>The R&amp;B Song Pool</h2></div><p>R&B rewards an ear that knows a voice as well as a hook — its 801 tracks lean on tone over texture. When you're ready to switch lanes, the <a href='/'>song guesser</a> is every genre on one page.</p><ul class="songspot-song-cloud"><li><b>With God On Our Side</b> — Meshell Ndegeocello, Bill Callahan &amp; Chris Thile</li><li><b>All My Life</b> — Mariah Carey</li><li><b>September</b> — Earth, Wind &amp; Fire</li><li><b>Easy Lover</b> — Philip Bailey &amp; Phil Collins</li><li><b>Let's Groove</b> — Earth, Wind &amp; Fire</li><li><b>Unpretty</b> — TLC</li><li><b>Call Me</b> — Blondie</li><li><b>Unapologetic</b> — Queen Butterfly</li></ul></section>
 <section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Train the ear</p><h2>What to Listen For</h2></div><div class="songspot-feature-grid"><article><span class="icon">🎹</span><h3>Listen for the chord color</h3><p>A warm quiet-storm progression is a different record from a bright, clean one. The harmony tags the era faster than the singer.</p></article><article><span class="icon">🎤</span><h3>Follow the run to its home</h3><p>The opening run often quotes the chorus melody, so a single bend can be the whole answer. Keep your ear on the singer, not the beat.</p></article><article><span class="icon">🥁</span><h3>Feel the pocket, not the tempo</h3><p>Two slow jams can sit at the same speed and swing differently. The groove is the tell, not the BPM.</p></article></div></section>
 <section class="songspot-seo-section"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">How to play</p><h2>How to Play the R&amp;B Quiz</h2></div><p>Trust the vocal first. A breath, a run or the shape of a chord is usually enough; reveal more only when the groove won't place itself.</p></section>
 <section id="faq" class="songspot-seo-section songspot-seo-faq"><div class="songspot-seo-heading"><p class="songspot-seo-eyebrow">Questions about this quiz</p><h2>R&amp;B song quiz FAQ</h2></div><div class="songspot-faq-list"><details open><summary>What gives an R&B guessable song away fastest?</summary><p>The vocal. A run, a breath or the shape of a chord names the track faster than the beat does, so keep your ear on the singer.</p></details><details><summary>How many R&B guessable songs can I play?</summary><p>801 tracks, from slow jams to the current chart. The rotation stays inside the genre and never repeats on purpose.</p></details><details><summary>Is R&B harder than pop?</summary><p>It can be. R&B leans on subtler clues like vocal tone and chord color, so the opening slice of a guessable song asks a little more of your ear.</p></details></div></section>

@@ -6,6 +6,9 @@
 <title>Music Quiz — Song Guessing Game | Guess the Song Title</title>
 <meta name="description" content="Play the Song Guesser Music Quiz: hear a 0.1-second clip and pick the right song from four answers. A/B/C/D multiple choice, five difficulties, no typing, no signup." />
 <link rel="canonical" href="https://www.songguesser.co/music-quiz/" />
+<link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+<link rel="icon" type="image/png" sizes="512x512" href="/images/logo.png" />
+<link rel="apple-touch-icon" href="/images/logo.png" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Music Quiz — Song Guessing Game | Guess the Song Title" />
 <meta property="og:description" content="Hear a 0.1-second clip and pick the song from four answers. A free Heardle-style multiple choice song quiz with five difficulties." />
@@ -13,6 +16,10 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Music Quiz — Song Guessing Game | Guess the Song Title" />
 <meta name="twitter:description" content="Hear a 0.1-second clip, pick A, B, C or D. Free multiple choice song quiz, no signup." />
+<meta property="og:image" content="https://www.songguesser.co/images/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:image" content="https://www.songguesser.co/images/og.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,700;1,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -40,7 +47,7 @@ button{font-family:inherit}
 .songspot-site-header{position:sticky;top:0;z-index:50;height:64px;color:#f3f7f4;background:#030704f5;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid #ffffff13}
 .songspot-site-header-inner{display:grid;grid-template-columns:minmax(180px,1fr) auto minmax(180px,1fr);align-items:center;width:min(1120px,100% - 48px);height:100%;margin:0 auto}
 .songspot-site-brand{display:inline-flex;align-items:center;gap:10px;width:fit-content;text-decoration:none;color:#f5f9f6f0}
-.songspot-site-brand .logo{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--song-accent);color:var(--song-accent-on);font-size:16px;font-weight:800;font-style:italic}
+.songspot-site-brand .logo{width:30px;height:30px;border-radius:8px;display:block;flex:none}
 .songspot-site-brand span{font-size:19px;font-style:italic;font-weight:800;letter-spacing:.015em}
 .songspot-site-desktop-nav{display:flex;justify-content:center;align-items:center;gap:4px;height:100%}
 .songspot-site-nav-link{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:999px;color:#e2eae49e;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:color .16s,background .16s}
@@ -322,7 +329,7 @@ button{font-family:inherit}
 <header class="songspot-site-header">
   <div class="songspot-site-header-inner">
     <a class="songspot-site-brand" href="/" aria-label="Song Guesser — Play">
-      <span class="logo">SG</span><span>Song Guesser</span>
+      <img class="logo" src="/images/logo.svg" alt="" width="30" height="30" /><span>Song Guesser</span>
     </a>
     <nav class="songspot-site-desktop-nav" aria-label="Song Guesser navigation">
       <a class="songspot-site-nav-link" href="/">Play</a>
