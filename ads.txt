@@ -1,0 +1,3 @@
+# Song Guesser — songguesser.co
+# Replace the placeholder publisher ID below with your own Google AdSense ID.
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

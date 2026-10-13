@@ -49,7 +49,7 @@
   var ctx = null, gain = null, pool = [], all = [], bufCache = {}, cur = null, opts = [], VOLUME = 1.0, playTimer = 0, activeSource = null, progressRAF = 0;
 
   var el = {
-    playKey:$('#playKey'), skip:$('#skipBtn'), options:$('#mcqOptions'),
+    playKey:$('#playKey'), options:$('#mcqOptions'),
     banner:$('#answerBanner'), status:$('#status'), timeline:$('#timeline'), label:$('#timelineLabel'),
     playStage:$('#playStage'), chips:$('#stageChips'), rail:$('#difficultyList'), tabs:$('#difficultyTabs'),
     genreReel:$('#genreReel'), volume:$('#volume'), reroll:$('#rerollBtn'), badge:$('#filterBadge')
@@ -244,21 +244,6 @@
     var nb = $('#nextBtn'); if(nb) nb.onclick = newRound;
   }
 
-  function skip(){
-    if(!cur) return;
-    if(cur.done){ newRound(); return; }
-    if(cur.level < REVEALS.length - 1){
-      cur.level++;
-      renderTimeline();
-      setStatus('Revealing a longer clip', 'is-incorrect');
-      play();
-    } else {
-      cur.done = true;
-      setStatus('Out of clips', 'is-failed');
-      showAnswer(false);
-    }
-  }
-
   function newRound(){
     var go = function(){
       cur = { track:pool.splice(Math.floor(Math.random()*pool.length), 1)[0], level:0, done:false };
@@ -342,7 +327,6 @@
 
   // ---- bindings ----
   el.playKey.addEventListener('click', play);
-  el.skip.addEventListener('click', skip);
   el.reroll.addEventListener('click', function(){ if(pool.length < 1) loadPool().then(newRound); else newRound(); });
 
   $$('#stageChips .songspot-control-chip').forEach(function(c){
@@ -391,5 +375,5 @@
     renderBadge();
   })();
 
-  loadPool().catch(function(){});
+  loadPool().then(newRound).catch(function(){ setStatus('Failed to load songs — check connection', 'is-failed'); });
 })();

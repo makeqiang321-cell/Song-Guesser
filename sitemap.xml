@@ -3,10 +3,20 @@
   <url><loc>https://www.songguesser.co/</loc><priority>1.0</priority></url>
   <url><loc>https://www.songguesser.co/song-quiz/</loc><priority>0.9</priority></url>
   <url><loc>https://www.songguesser.co/music-quiz/</loc><priority>0.9</priority></url>
+  <url><loc>https://www.songguesser.co/music-guesser/</loc><priority>0.85</priority></url>
+  <url><loc>https://www.songguesser.co/guess-the-taylor-swift-song/</loc><priority>0.85</priority></url>
+  <url><loc>https://www.songguesser.co/guess-that-song/</loc><priority>0.85</priority></url>
+  <url><loc>https://www.songguesser.co/guess-the-song-in-0-1-second/</loc><priority>0.85</priority></url>
+  <url><loc>https://www.songguesser.co/disney-guess-the-song/</loc><priority>0.85</priority></url>
+  <url><loc>https://www.songguesser.co/music-guessing-game/</loc><priority>0.85</priority></url>
+  <url><loc>https://www.songguesser.co/songless/</loc><priority>0.85</priority></url>
   <url><loc>https://www.songguesser.co/guess-song-decades/</loc><priority>0.85</priority></url>
   <url><loc>https://www.songguesser.co/guessable-songs/</loc><priority>0.85</priority></url>
   <url><loc>https://www.songguesser.co/song-guesser-artists/</loc><priority>0.85</priority></url>
   <url><loc>https://www.songguesser.co/how-to-play/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.songguesser.co/privacy-policy/</loc><priority>0.3</priority></url>
+  <url><loc>https://www.songguesser.co/terms-of-service/</loc><priority>0.3</priority></url>
+  <url><loc>https://www.songguesser.co/contact/</loc><priority>0.3</priority></url>
   <url><loc>https://www.songguesser.co/about/</loc><priority>0.6</priority></url>
   <url><loc>https://www.songguesser.co/song-guesser-artists/taylor-swift/</loc><priority>0.8</priority></url>
   <url><loc>https://www.songguesser.co/song-guesser-artists/michael-jackson/</loc><priority>0.8</priority></url>
