@@ -1,3 +1,4 @@
 # Song Guesser — songguesser.co
-# Replace the placeholder publisher ID below with your own Google AdSense ID.
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# Advertising is not yet enabled. When your Google AdSense account is approved,
+# replace the line below with your real publisher record, e.g.:
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
