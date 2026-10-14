@@ -40,8 +40,8 @@ guide_css = guide_css.replace('.wrap{width:min(760px,100% - 40px);margin:0 auto}
                               '.guide-article{width:min(760px,100% - 40px);margin:0 auto}')
 guide_css += '\n.guide-article a{color:var(--guide-accent-2);text-decoration:none}\n.guide-article a:hover{text-decoration:underline}\n'
 
-TITLE = 'Guess the Song Online: How It Works &amp; How to Get Better'
-DESC = 'How guess-the-song games work, which free online game fits your goal, and a repeatable ear-training method to name a track from a 0.1-second clip.'
+TITLE = 'Guess Song: How to Play &amp; Get Better'
+DESC = 'How to play guess song and get better. Rules, the 0.1-second reveal mechanic, and what your ear reads in a short clip.'
 
 head = '''<!doctype html>
 <html lang="en">

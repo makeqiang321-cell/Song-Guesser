@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Guess the Song Online: How It Works &amp; How to Get Better</title>
-<meta name="description" content="How guess-the-song games work, which free online game fits your goal, and a repeatable ear-training method to name a track from a 0.1-second clip." />
+<title>Guess Song: How to Play &amp; Get Better</title>
+<meta name="description" content="How to play guess song and get better. Rules, the 0.1-second reveal mechanic, and what your ear reads in a short clip." />
 <link rel="canonical" href="https://www.songguesser.co/guess-song-online/" />
 <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Guess the Song Online: How It Works &amp; How to Get Better" />
-<meta property="og:description" content="How guess-the-song games work, which free online game fits your goal, and a repeatable ear-training method to name a track from a 0.1-second clip." />
+<meta property="og:title" content="Guess Song: How to Play &amp; Get Better" />
+<meta property="og:description" content="How to play guess song and get better. Rules, the 0.1-second reveal mechanic, and what your ear reads in a short clip." />
 <meta property="og:url" content="https://www.songguesser.co/guess-song-online/" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Guess the Song Online: How It Works &amp; How to Get Better" />
-<meta name="twitter:description" content="How guess-the-song games work, which free online game fits your goal, and a repeatable ear-training method to name a track from a 0.1-second clip." />
+<meta name="twitter:title" content="Guess Song: How to Play &amp; Get Better" />
+<meta name="twitter:description" content="How to play guess song and get better. Rules, the 0.1-second reveal mechanic, and what your ear reads in a short clip." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -316,7 +316,6 @@ button{font-family:inherit}
 .songspot-footer-disclaimer{grid-column:1/-1;font-size:12px;color:#7f8b83;line-height:1.75;max-width:820px;margin:0}
 
 
-/* ===== NEW template: "guide" layout — distinct from the songspot-seo section rhythm ===== */
 :root{
   --guide-bg:#0a0f0c; --guide-surface:#0e1511; --guide-card:#121a15; --guide-line:#ffffff0e;
   --guide-ink:#eaf3ec; --guide-mut:#9aa79e; --guide-dim:#6f7d74;
@@ -330,7 +329,6 @@ html{scroll-behavior:smooth}
 
 .guide-article{width:min(760px,100% - 40px);margin:0 auto}
 
-/* top bar + footer */
 .guide-bar{position:sticky;top:0;z-index:20;background:rgba(10,15,12,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--guide-line)}
 .guide-bar-inner{width:min(760px,100% - 40px);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
 .guide-logo{font-family:var(--guide-display);font-weight:800;font-size:22px;letter-spacing:.02em;color:var(--guide-ink)}
@@ -339,98 +337,57 @@ html{scroll-behavior:smooth}
 .guide-play:hover{text-decoration:none;background:var(--guide-accent-2)}
 .guide-foot{border-top:1px solid var(--guide-line);margin-top:72px;padding:40px 0 56px;color:var(--guide-dim);font-size:13px}
 
-/* hero */
-.guide-hero{padding:56px 0 24px}
-.guide-kicker{font-family:var(--guide-display);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--guide-accent);margin:0 0 14px}
-.guide-hero h1{font-family:var(--guide-display);font-weight:800;font-size:clamp(34px,5.4vw,54px);line-height:1.04;letter-spacing:-.02em;margin:0 0 18px}
-.guide-hero .deck{font-size:17px;color:var(--guide-mut);max-width:640px;margin:0}
-.guide-met
-.guide-meta b{color:var(--guide-mut);font-weight:600}
+.guide-hero{padding:48px 0 8px}
+.guide-kicker{font-family:var(--guide-display);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--guide-accent);margin:0 0 12px}
+.guide-hero h1{font-family:var(--guide-display);font-weight:800;font-size:clamp(32px,5vw,50px);line-height:1.04;letter-spacing:-.02em;margin:0 0 12px}
+.guide-hero .deck{font-size:16px;color:var(--guide-mut);max-width:620px;margin:0}
 
-/* quick-answer card — feeds AI Overviews */
-.guide-quick{border:1px solid var(--guide-line);border-left:4px solid var(--guide-accent);background:var(--guide-card);border-radius:12px;padding:20px 22px;margin:28px 0 8px}
-.guide-quick .q-label{font-family:var(--guide-display);text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--guide-accent);margin:0 0 8px}
-.guide-quick p{margin:0;color:var(--guide-ink)}
-
-/* table of contents */
-.guide-toc{background:var(--guide-surface);border:1px solid var(--guide-line);border-radius:12px;padding:18px 22px;margin:32px 0 8px}
-.guide-toc .t-label{font-weight:700;font-size:14px;margin:0 0 10px}
-.guide-toc ol{margin:0;padding-left:0;list-style:none;counter-reset:toc}
-.guide-toc li{counter-increment:toc;margin:7px 0}
-.guide-toc 
-.guide-toc a::before{content:counter(toc) ". ";color:var(--guide-accent);font-weight:600}
-.guide-toc 
-
-/* sections */
-.guide-section{margin-top:52px}
-.guide-section h2{font-family:var(--guide-display);font-weight:700;font-size:30px;letter-spacing:-.01em;line-height:1.12;margin:0 0 16px;scroll-margin-top:80px}
-.guide-section h3{font-size:19px;font-weight:700;margin:26px 0 10px}
-.guide-section p{margin:0 0 16px;color:var(--guide-mut)}
-.guide-section p strong, .guide-section li strong{color:var(--guide-ink);font-weight:600}
-.guide-section ul,.guide-section ol{margin:0 0 18px;padding-left:22px;color:var(--guide-mut)}
-.guide-section li{margin:8px 0}
-
-/* step cards (ear-training method) */
-.guide-steps{counter-reset:step;display:grid;gap:14px;margin:22px 0 8px}
-.guide-step{background:var(--guide-card);border:1px solid var(--guide-line);border-radius:12px;padding:18px 20px;position:relative}
-.guide-step::before{counter-increment:step;content:counter(step,decimal-leading-zero);font-family:var(--guide-display);font-weight:800;font-size:30px;color:var(--guide-accent);display:block;margin-bottom:6px}
-.guide-step h3{margin:0 0 8px;font-size:17px}
-.guide-step p{margin:0;font-size:15px}
-
-/* comparison table */
-.guide-table-wrap{overflow-x:auto;margin:22px 0 8px;border:1px solid var(--guide-line);border-radius:12px}
-.guide-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
-.guide-table th{background:var(--guide-surface);color:var(--guide-ink);text-align:left;padding:12px 14px;font-weight:600;border-bottom:1px solid var(--guide-line);white-space:nowrap}
-.guide-table td{padding:11px 14px;border-bottom:1px solid var(--guide-line);color:var(--guide-mut);vertical-align:top}
-.guide-table tr:last-child td{border-bottom:0}
-.guide-table td:first-child{color:var(--guide-ink);font-weight:500;white-space:nowrap}
-
-/* callouts */
-.guide-note{border-radius:10px;padding:14px 16px;margin:18px 0;font-size:14px;border:1px solid var(--guide-line)}
-.guide-note.tip{background:rgba(25,223,112,.06);border-left:3px solid var(--guide-accent)}
-.guide-note.warn{background:rgba(255,202,18,.05);border-left:3px solid var(--guide-warn)}
-.guide-note .n{font-weight:700;display:block;margin-bottom:4px}
-.guide-note.tip .n{color:var(--guide-accent)}
-.guide-note.warn .n{color:var(--guide-warn)}
-.guide-note p{margin:0;color:var(--guide-mut)}
-
-/* FAQ accordion */
-.guide-faq{margin:22px 0 8px;border-top:1px solid var(--guide-line)}
-.guide-faq details{border-bottom:1px solid var(--guide-line)}
-.guide-faq summary{cursor:pointer;padding:16px 4px;font-weight:600;font-size:15.5px;color:var(--guide-ink);list-style:none;position:relative;padding-right:32px}
-.guide-faq summary::-webkit-details-marker{display:none}
-.guide-faq summary::after{content:"+";position:absolute;right:6px;top:13px;color:var(--guide-accent);font-size:22px;font-weight:400}
-.guide-faq details[open] summary::after{content:"\2212"}
-.guide-faq .
-
-/* takeaways */
-.guide-takeaway{background:var(--guide-card);border:1px solid var(--guide-line);border-radius:12px;padding:20px 22px;margin:40px 0 8px}
-.guide-takeaway h2{font-family:var(--guide-display);font-size:22px;margin:0 0 12px}
-.guide-takeaway ul{margin:0;padding-left:20px;color:var(--guide-mut)}
-.guide-takeaway li{margin:6px 0}
+/* ===== guess-song tool widget (interactive) ===== */
+.gsw{border:1px solid var(--guide-line);border-radius:14px;background:linear-gradient(180deg,#0f1712,#0c120e);padding:18px;margin:24px 0 8px;box-shadow:0 12px 34px rgba(0,0,0,.4)}
+.gsw-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.gsw-label{font-family:var(--guide-display);text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--guide-dim)}
+.gsw-track{font-weight:600;font-size:14px;color:var(--guide-mut);text-align:right}
+.gsw-ladder{display:flex;gap:6px;margin-bottom:14px}
+.gsw-rung{flex:1;text-align:center;font-size:12px;padding:7px 0;border-radius:7px;background:var(--guide-surface);color:var(--guide-dim);border:1px solid var(--guide-line)}
+.gsw-rung.on{background:var(--guide-accent);color:#06210f;font-weight:700;border-color:var(--guide-accent)}
+.gsw-btns{display:flex;gap:10px;margin-bottom:12px}
+.gsw-play{flex:1;font-weight:700;font-size:15px;color:#06210f;background:var(--guide-accent);border:none;border-radius:10px;padding:12px;cursor:pointer}
+.gsw-play:hover{background:var(--guide-accent-2)}
+.gsw-skip{font-weight:600;font-size:14px;color:var(--guide-ink);background:var(--guide-surface);border:1px solid var(--guide-line);border-radius:10px;padding:12px 16px;cursor:pointer}
+.gsw-skip:hover{border-color:var(--guide-accent)}
+.gsw-row{display:flex;gap:8px}
+.gsw-row input{flex:1;background:var(--guide-surface);border:1px solid var(--guide-line);border-radius:10px;padding:11px 12px;color:var(--guide-ink);font:inherit;font-size:14px}
+.gsw-row input:focus{outline:none;border-color:var(--guide-accent)}
+.gsw-guess,.gsw-next{font-weight:600;font-size:14px;color:var(--guide-ink);background:transparent;border:1px solid var(--guide-line);border-radius:10px;padding:11px 16px;cursor:pointer}
+.gsw-guess:hover,.gsw-next:hover{border-color:var(--guide-accent)}
+.gsw-msg{margin-top:12px;font-size:14px;min-height:20px}
+.gsw-msg.ok{color:var(--guide-accent)}
+.gsw-msg.bad{color:var(--guide-bad)}
+.gsw-msg.reveal{color:var(--guide-warn)}
+.gsw-newrow{margin-top:10px;text-align:right}
 
 @media(max-width:560px){
-  .guide-hero{padding:40px 0 16px}
-  .guide-section h2{font-size:25px}
+  .guide-hero{padding:36px 0 4px}
+  .gsw-btns,.gsw-row{flex-direction:column}
 }
 
 .guide-article a{color:var(--guide-accent-2);text-decoration:none}
 .guide-article a:hover{text-decoration:underline}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Guess the Song Online: How It Works & How to Get Better","description":"How guess-the-song games work, which free online game fits your goal, and a repeatable ear-training method to name a track from a 0.1-second clip.","author":{"@type":"Organization","name":"Song Guesser","url":"https://www.songguesser.co/"},"publisher":{"@type":"Organization","name":"Song Guesser","url":"https://www.songguesser.co/"},"mainEntityOfPage":"https://www.songguesser.co/guess-song-online/","datePublished":"2026-10-14","dateModified":"2026-10-14"}
+{"@context":"https://schema.org","@type":"Article","headline":"Guess Song: How to Play & Get Better","description":"How to play guess song and get better. Rules, the 0.1-second reveal mechanic, and what your ear reads in a short clip.","author":{"@type":"Organization","name":"Song Guesser","url":"https://www.songguesser.co/"},"publisher":{"@type":"Organization","name":"Song Guesser","url":"https://www.songguesser.co/"},"mainEntityOfPage":"https://www.songguesser.co/guess-song-online/","datePublished":"2026-10-14","dateModified":"2026-10-14"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.songguesser.co/"},{"@type":"ListItem","position":2,"name":"Guess the Song Online","item":"https://www.songguesser.co/guess-song-online/"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.songguesser.co/"},{"@type":"ListItem","position":2,"name":"Guess Song","item":"https://www.songguesser.co/guess-song-online/"}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What is a guess the song online game?","acceptedAnswer":{"@type":"Answer","text":"A guess-the-song online game plays a short clip of a real song and asks you to name the track (and sometimes the artist) before the clip grows. Most start at 0.1 to 1 second, reveal longer slices when you guess wrong or skip, and run free in the browser with no signup."}},
-{"@type":"Question","name":"Are guess-the-song games free and do I need an account?","acceptedAnswer":{"@type":"Answer","text":"Most are free and need no account. Some multiplayer or Spotify-based games ask you to sign in, but a login is not required to play the core single-player format. Avoid any game that forces a streaming-account connection just to hear a clip."}},
-{"@type":"Question","name":"How can you guess a song in 0.1 seconds?","acceptedAnswer":{"@type":"Answer","text":"At 0.1 seconds there is no melody or lyric, but your brain still reads the timbre and attack of the recording: a drum hit, a synth stab, a breath, or a producer tag. Lock an era or artist filter first, then match that texture to a shortlist instead of trying to name the song cold."}},
-{"@type":"Question","name":"What happened to Heardle?","acceptedAnswer":{"@type":"Answer","text":"Spotify acquired Heardle in July 2022 and shut it down on April 4, 2023. Fan-made successors such as Songless, Songspot and others filled the gap, adding unlimited play, difficulty tiers and era filters that the original did not have."}},
-{"@type":"Question","name":"What is the best free song guessing game?","acceptedAnswer":{"@type":"Answer","text":"There is no single best for everyone. Pick by goal: a daily ritual (a shared song each day), unlimited practice (reroll rounds), live multiplayer, or a single-artist or era catalog. A game with difficulty tiers and era filters is the most flexible starting point."}},
-{"@type":"Question","name":"How do I get better at guessing songs?","acceptedAnswer":{"@type":"Answer","text":"Train on texture instead of melody, build a mental index of each era's production sound, drill one artist at a time, commit early or extend in large jumps rather than nibbling, and use headphones so the bass and low-mids survive."}}
+{"@type":"Question","name":"What is guess song?","acceptedAnswer":{"@type":"Answer","text":"A music game where you name a real song from a very short clip. The less audio you need, the better."}},
+{"@type":"Question","name":"How do you play guess song?","acceptedAnswer":{"@type":"Answer","text":"Press play, name the song or artist, and skip or miss to reveal a longer clip: 0.1s, 0.5s, 2s, 8s, 15s."}},
+{"@type":"Question","name":"How can you guess a song in 0.1 seconds?","acceptedAnswer":{"@type":"Answer","text":"Read timbre and attack, not melody. Lock a genre, decade, or artist filter, then match the texture to a shortlist."}},
+{"@type":"Question","name":"Is guess song free and do I need an account?","acceptedAnswer":{"@type":"Answer","text":"Yes, and no. It runs in any browser, needs no signup or download, and has no one-a-day limit."}},
+{"@type":"Question","name":"How many guesses do you get?","acceptedAnswer":{"@type":"Answer","text":"No fixed cap. Each miss or skip reveals a longer clip until 15 seconds shows the answer."}},
+{"@type":"Question","name":"How do I get better at guess song?","acceptedAnswer":{"@type":"Answer","text":"Train on texture, build an era index, drill one artist at a time, and jump instead of nibbling."}}
 ]}
 </script>
 </head>
@@ -491,108 +448,170 @@ html{scroll-behavior:smooth}
 <main class="guide-article">
 
   <div class="guide-hero">
-    <p class="guide-kicker">Guide · Music guessing games</p>
-    <h1>Guess the Song Online: How It Works &amp; How to Get Better</h1>
-    <p class="deck">A tenth of a second of audio is the whole clue. Here is how these games work, how to pick the right one for your goal, and a repeatable way to train your ear so the title lands before the clip grows.</p>
-    <div class="guide-meta"><span>Updated <b>October 14, 2026</b></span><span>Reading time <b>9 min</b></span><span>By <b>Song Guesser</b></span></div>
-  </div>
+    <p class="guide-kicker">Guess song · how to play</p>
+    <h1>Guess Song: How to Play &amp; Get Better</h1>
+    <p class="deck">Name the song from a short clip before it grows. Try it below, then read how to get better.</p>
 
-  <aside class="guide-quick">
-    <p class="q-label">Quick answer</p>
-    <p><strong>Guess-the-song online games play a very short clip — often 0.1 seconds — and you name the track before the clip lengthens.</strong> They are free, browser-based and need no signup. The skill is not melody recognition but <em>timbre</em>: reading the drum hit, synth stab, vocal breath or producer tag that survives a fraction of a second.</p>
-  </aside>
+    <div class="gsw" id="gsw">
+      <div class="gsw-top"><span class="gsw-label">Try it · live</span><span class="gsw-track" id="gswTrack">loading…</span></div>
+      <div class="gsw-ladder" id="gswLadder">
+        <span class="gsw-rung on">0.1s</span><span class="gsw-rung">0.5s</span><span class="gsw-rung">2s</span><span class="gsw-rung">8s</span><span class="gsw-rung">15s</span>
+      </div>
+      <div class="gsw-btns">
+        <button class="gsw-play" id="gswPlay">▶ Play</button>
+        <button class="gsw-skip" id="gswSkip">Skip ▸</button>
+      </div>
+      <div class="gsw-row">
+        <input id="gswInput" placeholder="Name the song or artist…" autocomplete="off" />
+        <button class="gsw-guess" id="gswGuess">Guess</button>
+      </div>
+      <div class="gsw-msg" id="gswMsg"></div>
+      <div class="gsw-newrow"><button class="gsw-next" id="gswNext">New song</button></div>
+    </div>
+  </div>
 
   <nav class="guide-toc" aria-label="Table of contents">
     <p class="t-label">On this page</p>
     <ol>
-      <li><a href="#what">What "guess the song online" actually is</a></li>
-      <li><a href="#how">How the 0.1-second mechanic works</a></li>
-      <li><a href="#pick">Pick the right game for your goal</a></li>
-      <li><a href="#train">A repeatable ear-training method</a></li>
-      <li><a href="#faq">Frequently asked questions</a></li>
+      <li><a href="#what">What guess song is</a></li>
+      <li><a href="#play">How to play</a></li>
+      <li><a href="#mechanic">Reveal and difficulty</a></li>
+      <li><a href="#ear">What you hear at 0.1 seconds</a></li>
+      <li><a href="#better">How to get better</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ol>
   </nav>
 
   <section class="guide-section" id="what">
-    <h2>1. What "guess the song online" actually is</h2>
-    <p>At its core, a guess-the-song game is a <strong>sonic memory test</strong>: hear a snippet, name the record. The modern version descends from <strong>Heardle</strong>, the "Wordle for music" that Spotify bought in July 2022 and killed on April 4, 2023. Its shutdown is the reason the category looks the way it does today — a field of fan successors each patching a different complaint about the original.</p>
-    <p>Heardle gave you one song a day, one difficulty, and a six-step reveal from one second up to sixteen. The successors kept the reveal ladder but split the audience three ways:</p>
-    <ul>
-      <li><strong>The daily ritual</strong> — one shared song a day, scored, so everyone is guessing the same track.</li>
-      <li><strong>The unlimited grind</strong> — press reroll and get track after track, with no daily lock.</li>
-      <li><strong>The social room</strong> — live multiplayer where you race friends against a shared clip.</li>
-    </ul>
-    <p>What separates a good game from a bad one is not the clip length but the <strong>controls around it</strong>: difficulty tiers, era and genre filters, and a search box that forgives a half-remembered title.</p>
+    <h2>1. What guess song is</h2>
+    <p>Guess song tests how little audio you need to name a record. Every round opens on a 0.1-second clip and only reveals more when you miss or skip, so the real score is how early you got it.</p>
+    <p>The format came from Heardle's name-the-intro idea, but modern rounds start at a tenth of a second and have no one-a-day limit.</p>
   </section>
 
-  <section class="guide-section" id="how">
-    <h2>2. How the 0.1-second mechanic works</h2>
-    <p>The hardest versions open on <strong>0.1 seconds</strong> of audio — before a melody resolves, before a lyric lands. That sounds impossible until you understand what your brain is actually reading. At a tenth of a second there is no tune, but four things survive:</p>
-    <ul>
-      <li><strong>Attack transients</strong> — the first milliseconds of a drum hit, a pick, or a synth stab have a fingerprint.</li>
-      <li><strong>Timbre</strong> — the spectral shape of a voice or instrument: a snare's crack, a guitar's midrange, a synth's width.</li>
-      <li><strong>Room and reverb</strong> — how the recording sits in space. Dry, compressed 2000s pop sounds nothing like a cathedral-sized 80s snare.</li>
-      <li><strong>Count-ins and producer tags</strong> — a breath, a stick click, a shouted "Metro!" — these are free answers.</li>
-    </ul>
-    <div class="guide-note tip"><span class="n">The key insight</span><p>You are not naming the song cold. You are <strong>dating the production and matching a texture to a shortlist</strong>. Lock an era or artist filter first and a "Impossible" clip becomes a multiple-choice between three songs you already know.</p></div>
-    <p>Difficulty in these games usually changes <strong>which songs you see, not how the clip is cut</strong>. Easy deals in unmistakable chart hits; Impossible deals in album cuts where the intro is a generic four-chord piano. The reveal ladder (0.1s → 0.5s → 2s → 8s → 15s) is the same; your confidence is what changes.</p>
-  </section>
-
-  <section class="guide-section" id="pick">
-    <h2>3. Pick the right game for your goal</h2>
-    <p>Most "best games" lists dump a dozen names with no way to choose. The question that actually decides your pick is <strong>what you want the game to do for you</strong>. Four goals, four different answers:</p>
-    <div class="guide-table-wrap">
-      <table class="guide-table">
-        <thead><tr><th>Your goal</th><th>Pick this format</th><th>Why</th></tr></thead>
-        <tbody>
-          <tr><td>A 2-minute daily habit</td><td>Daily challenge</td><td>One shared song, one score, nothing to maintain.</td></tr>
-          <tr><td>Unlimited reps to train</td><td>Unlimited / reroll</td><td>No lock, no streak pressure — just volume.</td></tr>
-          <tr><td>Beat friends live</td><td>Multiplayer rooms</td><td>Public or private lobbies with a leaderboard.</td></tr>
-          <tr><td>One artist or era only</td><td>Artist / era-locked mode</td><td>Deep-cuts mode for a catalog you know.</td></tr>
-          <tr><td>Text only, no audio</td><td>Lyric-snippet quiz</td><td>Guess from a line instead of a sound.</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p>Two filters apply no matter the format. First, <strong>prefer a game with difficulty tiers and era/genre filters</strong> — they are the difference between a warm-up you can win and a humbling wall. Second, <strong>avoid any game that forces a Spotify or Apple Music login just to hear a clip</strong>; a streaming account is never required for the core single-player loop, and forcing one is a red flag, not a feature.</p>
-    <div class="guide-note warn"><span class="n">Watch out</span><p>Beware "free" games that bury the play button under ads or lock you out after one round until you register. The good ones keep the clip, the search box and the skip button one tap away with nothing in the way.</p></div>
-  </section>
-
-  <section class="guide-section" id="train">
-    <h2>4. A repeatable ear-training method</h2>
-    <p>Tips are easy to read and easy to forget. A method is something you can run every session. This one is six steps, in order, and it compounds — each step shrinks the list you are guessing against.</p>
+  <section class="guide-section" id="play">
+    <h2>2. How to play</h2>
     <div class="guide-steps">
-      <div class="guide-step"><h3>Listen for texture, not melody</h3><p>On a 0.1s clip there is no melody. Name the <em>texture</em> instead: "gated snare", "warm Rhodes", "808 with a metallic hat". Texture tells you the era and the genre in one hit.</p></div>
-      <div class="guide-step"><h3>Build an era index</h3><p>80s = gated reverb and drum machines. 90s = grunge guitars and acoustic intros. 2000s = compressed pop and ringtone hooks. 2010s = EDM drops and trap hi-hats. 2020s = lo-fi and trap-pop. Dating the recording prunes the catalogue before you guess.</p></div>
-      <div class="guide-step"><h3>Drill one artist at a time</h3><p>Start with an artist's hits, then their deep cuts, until their intros are a reflex. Your brain files music by artist, so training one catalog at a time builds the fastest lookup table.</p></div>
-      <div class="guide-step"><h3>Commit early or extend in jumps</h3><p>Never nibble 0.1s → 0.5s → 2s. If nothing surfaces on the first listen, jump straight to 2–3 seconds. Nibbling pays the score penalty of a long clip while giving you the information of a short one.</p></div>
-      <div class="guide-step"><h3>Use headphones</h3><p>Phone and laptop speakers lose the bass and low-mids — exactly where a recording's signature lives. A cheap pair of earphones is the single biggest upgrade for this game.</p></div>
-      <div class="guide-step"><h3>Replay before you commit, save your skips</h3><p>Use the playback control to hear the slice again before typing. Save skips for genres you are weak in rather than burning them on early confidence.</p></div>
+      <div class="guide-step"><h3>Press play</h3><p>The round opens on a 0.1-second clip.</p></div>
+      <div class="guide-step"><h3>Name the song</h3><p>Type the title or artist and pick from the suggestions.</p></div>
+      <div class="guide-step"><h3>Get it right, round ends</h3><p>Guessing on the shortest clip is the best result.</p></div>
+      <div class="guide-step"><h3>Miss or skip, clip grows</h3><p>0.1s, 0.5s, 2s, 8s, then 15s.</p></div>
+      <div class="guide-step"><h3>Reroll</h3><p>No daily lock. Play as many rounds as you want.</p></div>
     </div>
-    <p>Expect to be humbled at "Impossible" on any era — even strong players are. The goal is not to stop missing; it is to make the misses faster and the hits land on the shortest clip.</p>
+  </section>
+
+  <section class="guide-section" id="mechanic">
+    <h2>3. Reveal and difficulty</h2>
+    <p>Two dials control how hard a round feels, and they do different jobs.</p>
+    <ul>
+      <li><strong>Reveal ladder</strong>: 0.1s, 0.5s, 2s, 8s, 15s. Same on every song. Guessing early is always better.</li>
+      <li><strong>Difficulty</strong>: Easy to Impossible. It changes which songs you see, not how the clip is cut. Easy deals chart hits. Impossible deals album cuts.</li>
+    </ul>
+    <p>Filters are the third dial. Lock a genre, decade, or artist and the pool shrinks to music you know. That is the fastest way to make Impossible winnable.</p>
+  </section>
+
+  <section class="guide-section" id="ear">
+    <h2>4. What you hear at 0.1 seconds</h2>
+    <p>No melody, no lyric. Four things survive a tenth of a second:</p>
+    <ul>
+      <li><strong>Attack</strong>: the first milliseconds of a drum hit, pick, or synth stab.</li>
+      <li><strong>Timbre</strong>: a snare's crack, a guitar's midrange, a synth's width.</li>
+      <li><strong>Room and reverb</strong>: dry 2000s pop vs a big 80s snare.</li>
+      <li><strong>Count-ins and producer tags</strong>: a breath, a stick click, a shouted name.</li>
+    </ul>
+    <p>Headphones matter. Speakers strip the bass and low-mids where this texture lives.</p>
+  </section>
+
+  <section class="guide-section" id="better">
+    <h2>5. How to get better</h2>
+    <div class="guide-steps">
+      <div class="guide-step"><h3>Listen for texture, not melody</h3><p>Name the production sound, not the tune.</p></div>
+      <div class="guide-step"><h3>Build an era index</h3><p>80s gated reverb. 90s grunge and acoustic intros. 2000s compressed pop. 2010s trap hats and EDM drops.</p></div>
+      <div class="guide-step"><h3>Drill one artist at a time</h3><p>Hits first, then deep cuts, until intros are reflex.</p></div>
+      <div class="guide-step"><h3>Commit early or jump</h3><p>If nothing surfaces, skip straight to 2–3 seconds. Nibbling pays a long clip for short-clip information.</p></div>
+      <div class="guide-step"><h3>Use headphones</h3><p>Texture lives in the frequencies a speaker loses.</p></div>
+      <div class="guide-step"><h3>Replay before you type</h3><p>Hear the slice again, and save your skips for your weak genres.</p></div>
+    </div>
   </section>
 
   <section class="guide-section" id="faq">
-    <h2>5. Frequently asked questions</h2>
+    <h2>6. FAQ</h2>
     <div class="guide-faq">
-      <details open><summary>What is a guess-the-song online game?</summary><div class="a">A game that plays a short clip of a real song and asks you to name it before the clip grows. Most start at 0.1 to 1 second, reveal longer slices when you guess wrong or skip, and run free in the browser with no signup.</div></details>
-      <details><summary>Are these games free and do I need an account?</summary><div class="a">Most are free and need no account. Some multiplayer or Spotify-based games ask you to sign in, but a login is not required for the core single-player loop. Avoid any game that forces a streaming-account connection just to hear a clip.</div></details>
-      <details><summary>How can you guess a song in 0.1 seconds?</summary><div class="a">At 0.1 seconds there is no melody or lyric, but your brain still reads timbre and attack: a drum hit, a synth stab, a breath, a producer tag. Lock an era or artist filter first, then match the texture to a shortlist instead of naming the song cold.</div></details>
-      <details><summary>What happened to Heardle?</summary><div class="a">Spotify acquired Heardle in July 2022 and shut it down on April 4, 2023. Fan successors such as Songless and Songspot filled the gap, adding unlimited play, difficulty tiers and era filters the original lacked.</div></details>
-      <details><summary>What is the best free song guessing game?</summary><div class="a">There is no single best for everyone. Pick by goal: a daily ritual, unlimited practice, live multiplayer, or a single-artist or era catalog. A game with difficulty tiers and era filters is the most flexible starting point.</div></details>
-      <details><summary>How do I get better at guessing songs?</summary><div class="a">Train on texture instead of melody, build a mental index of each era's production sound, drill one artist at a time, commit early or extend in large jumps, and use headphones so the bass and low-mids survive.</div></details>
+      <details open><summary>What is guess song?</summary><div class="a">A music game where you name a real song from a very short clip. The less audio you need, the better.</div></details>
+      <details><summary>How do you play guess song?</summary><div class="a">Press play, name the song or artist, and skip or miss to reveal a longer clip: 0.1s, 0.5s, 2s, 8s, 15s.</div></details>
+      <details><summary>How can you guess a song in 0.1 seconds?</summary><div class="a">Read timbre and attack, not melody. Lock a genre, decade, or artist filter, then match the texture to a shortlist.</div></details>
+      <details><summary>Is guess song free? Do I need an account?</summary><div class="a">Yes, and no. It runs in any browser, needs no signup or download, and has no one-a-day limit.</div></details>
+      <details><summary>How many guesses do you get?</summary><div class="a">No fixed cap. Each miss or skip reveals a longer clip until 15 seconds shows the answer.</div></details>
+      <details><summary>How do I get better at guess song?</summary><div class="a">Train on texture, build an era index, drill one artist at a time, and jump instead of nibbling.</div></details>
     </div>
   </section>
 
   <aside class="guide-takeaway">
     <h2>Key takeaways</h2>
     <ul>
-      <li>Guess-the-song games test <strong>timbre memory</strong>, not melody — the first 0.1 seconds carry a recording's fingerprint.</li>
-      <li>Pick the game by <strong>goal</strong>: daily habit, unlimited training, multiplayer, or a single catalog.</li>
-      <li>Difficulty controls <strong>which songs</strong> you see, not how the clip is cut.</li>
-      <li>Train with an <strong>era index</strong>, one-artist drills, and "commit or jump" — never nibble.</li>
+      <li>Guess song reads timbre and attack, not melody. The first 0.1s carry the fingerprint.</li>
+      <li>The reveal ladder is fixed. Difficulty changes which songs you see.</li>
+      <li>Filters shrink the pool and make Impossible winnable.</li>
+      <li>Train with an era index, one-artist drills, and "commit or jump."</li>
     </ul>
   </aside>
 
+<script>
+(function(){
+  var LEVELS=[0.1,0.5,2,8,15];
+  var POOL=["Billie Jean Michael Jackson","Bohemian Rhapsody Queen","Smells Like Teen Spirit Nirvana","Blinding Lights The Weeknd","Shape of You Ed Sheeran","Rolling in the Deep Adele","Mr Brightside The Killers","Uptown Funk Mark Ronson"];
+  var el={track:document.getElementById('gswTrack'),ladder:document.getElementById('gswLadder'),play:document.getElementById('gswPlay'),skip:document.getElementById('gswSkip'),input:document.getElementById('gswInput'),guess:document.getElementById('gswGuess'),msg:document.getElementById('gswMsg'),next:document.getElementById('gswNext')};
+  var idx=0, track=null, audio=null, timer=null;
+
+  function rungs(){
+    var s=el.ladder.children;
+    for(var i=0;i<s.length;i++){ s[i].className = i<=idx ? 'gsw-rung on' : 'gsw-rung'; }
+  }
+  function msg(t,c){ el.msg.textContent=t; el.msg.className='gsw-msg '+(c||''); }
+
+  function load(){
+    var q=POOL[Math.floor(Math.random()*POOL.length)];
+    el.track.textContent='loading…';
+    fetch('https://itunes.apple.com/search?term='+encodeURIComponent(q)+'&entity=song&limit=1')
+      .then(function(r){return r.json();})
+      .then(function(j){
+        if(!j.results||!j.results.length){ el.track.textContent='retry…'; return load(); }
+        track=j.results[0];
+        el.track.textContent='????';
+        idx=0; rungs(); msg(''); el.input.value=''; audio=null;
+      })
+      .catch(function(){ el.track.textContent='offline'; });
+  }
+  function play(){
+    if(!track){ msg('still loading…'); return; }
+    if(!audio){ audio=new Audio(track.previewUrl); }
+    audio.pause(); audio.currentTime=0; audio.play();
+    clearTimeout(timer);
+    timer=setTimeout(function(){ audio.pause(); }, LEVELS[idx]*1000);
+    msg('Playing '+LEVELS[idx]+'s clip');
+  }
+  function skip(){
+    if(idx<LEVELS.length-1){ idx++; rungs(); play(); }
+    else msg('Full 15s reveal', 'reveal');
+  }
+  function norm(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]/g,''); }
+  function guess(){
+    if(!track){ msg('still loading…'); return; }
+    var v=norm(el.input.value);
+    if(!v){ msg('type a name first'); return; }
+    if(norm(track.trackName).indexOf(v)>-1 || norm(track.artistName).indexOf(v)>-1){
+      msg('Correct: '+track.trackName+' — '+track.artistName, 'ok');
+    } else {
+      msg('Not it. Answer: '+track.trackName+' — '+track.artistName, 'reveal');
+    }
+  }
+  el.play.addEventListener('click', play);
+  el.skip.addEventListener('click', skip);
+  el.guess.addEventListener('click', guess);
+  el.next.addEventListener('click', load);
+  el.input.addEventListener('keydown', function(e){ if(e.key==='Enter') guess(); });
+  load();
+})();
+</script>
 </main>
 
 <footer class="songspot-site-footer">
