@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta name='admaven-placement' content='BpdU4qHY6'>
+<meta name="msvalidate.01" content="1AE403D6F6F0047655859F9B6A0E14EB" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Song Guesser — Guess the Song in 0.1 Seconds</title>
@@ -253,6 +254,9 @@ button{font-family:inherit}
 .songspot-faq-list summary::after{content:"+";color:#7f8b83;font-size:20px;font-weight:400}
 .songspot-faq-list details[open] summary::after{content:"–"}
 .songspot-faq-list details p{margin:0 0 20px;font-size:14px}
+.songspot-timeline{list-style:none;margin:0 0 8px;padding:0;border-top:1px solid #ffffff1c}
+.songspot-timeline li{padding:18px 0;border-bottom:1px solid #ffffff1c;color:#9da8a0;font-size:14px;line-height:1.75}
+.songspot-timeline strong{color:var(--green2);font-weight:700}
 .songspot-seo-cta{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:520px;padding:96px 24px;text-align:center}
 .songspot-seo-cta h2{max-width:760px}
 .songspot-seo-cta>p:not(.songspot-seo-eyebrow){max-width:640px;margin-bottom:34px}
@@ -316,21 +320,77 @@ button{font-family:inherit}
 .songspot-mcq-skip:hover{color:#fff;box-shadow:inset 0 0 0 1px var(--song-accent)}
 
 .songspot-footer-disclaimer{grid-column:1/-1;font-size:12px;color:#7f8b83;line-height:1.75;max-width:820px;margin:0}
+/* directory */
+.quiz-directory{color:#f3f7f4;width:min(1180px,100% - 40px);margin:36px auto 64px;scroll-margin-top:88px}
+.quiz-directory :is(button,input,select){font:inherit}
+.quiz-directory :is(button,a,select):focus-visible{outline-offset:4px;outline:2px solid #19df70}
+.quiz-directory button{cursor:pointer}
+.qd-title{letter-spacing:-.035em;margin:0 0 22px;font-size:clamp(24px,3vw,32px);font-weight:700}
+.qd-search-row{gap:14px;display:flex}
+.qd-search{color:#a5b3a9;background:#0e1510;border:1px solid #34443b;border-radius:12px;flex:1;align-items:center;gap:10px;min-width:0;min-height:54px;padding:0 8px 0 16px;transition:border-color .15s,box-shadow .15s,background-color .15s;display:flex}
+.qd-search:hover{border-color:#63766a}
+.qd-search:focus-within{background:#101b14;border-color:#19df70;box-shadow:0 0 0 3px #19df7024}
+.qd-search>svg{flex-shrink:0;color:#a5b3a9}
+.qd-search:focus-within>svg{color:#19df70}
+.qd-search input{color:#f3f7f4;width:100%;min-width:0;min-height:52px;box-shadow:none;caret-color:#19df70;background:0 0;border:0;outline:none;flex:1;padding:12px 0;font-size:16px;line-height:1.5}
+.qd-search input::placeholder{color:#a5b3a9;opacity:1}
+.qd-search input::-webkit-search-cancel-button{display:none}
+.qd-random{color:#d6f6e1;background:#112019;border:1px solid #36513f;border-radius:10px;justify-content:center;align-items:center;gap:10px;min-height:54px;padding:10px 20px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;display:inline-flex;transition:filter .15s}
+.qd-random:hover{filter:brightness(1.15)}
+.qd-random svg{flex-shrink:0}
+.qd-controls{justify-content:space-between;align-items:center;gap:16px;margin-top:18px;display:flex}
+.qd-categories{gap:10px;margin:-5px;padding:5px;display:flex;overflow-x:auto}
+.qd-categories button{background:#0c110d;border:1px solid #34443b;border-radius:24px;flex:none;min-height:44px;padding:9px 23px;font-size:14px;color:#a5b3a9;transition:color .15s,border-color .15s,background .15s}
+.qd-categories button[aria-pressed="true"]{color:#19df70;background:#0b2415;border-color:#19df70}
+.qd-sort{color:#a5b3a9;flex-shrink:0;align-items:center;gap:10px;font-size:14px;display:flex}
+.qd-sort select{color:#f3f7f4;background:#0c110d;border:1px solid #34443b;border-radius:8px;max-width:180px;min-height:44px;padding:7px 9px}
+.qd-status{color:#a5b3a9;min-height:24px;margin:18px 0 4px;font-size:14px}
+.qd-section{margin-top:30px}
+.qd-section h3{letter-spacing:-.025em;margin:0 0 22px;font-size:clamp(22px,2.5vw,28px);font-weight:700;color:#f7faf8}
+.qd-section-head{justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px;display:flex}
+.qd-section-head h3{margin:0}
+.qd-section-head button,.qd-section-head a{color:#19df70;text-align:right;text-underline-offset:4px;align-items:center;gap:10px;min-height:44px;font-size:14px;text-decoration:underline;background:none;border:0;display:inline-flex}
+.qd-section-head button svg{flex-shrink:0}
+.qd-grid{gap:24px;margin-top:16px;display:grid}
+.qd-grid-artist{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:32px}
+.qd-grid-genre{grid-template-columns:repeat(3,minmax(0,1fr))}
+.qd-grid-decade{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.qd-card{color:#f3f7f4;border-radius:10px;min-width:0;text-decoration:none;display:block;position:relative}
+.qd-card[hidden]{display:none}
+.qd-image{aspect-ratio:2.5;background:#14231a;border:1px solid #34443b;border-radius:10px;place-items:center;display:grid;position:relative;overflow:hidden}
+.qd-image img{object-fit:cover;width:100%;height:100%;transition:transform .18s}
+.qd-card:hover .qd-image img{transform:scale(1.04)}
+.qd-card:hover strong{color:#19df70}
+.qd-card-artist{text-align:center}
+.qd-card-artist .qd-image{aspect-ratio:1;border-radius:50%}
+.qd-card-artist:hover .qd-image{border-color:#19df70}
+.qd-card-copy{flex-direction:column;gap:4px;min-width:0;display:flex}
+.qd-card-copy strong{-webkit-line-clamp:2;overflow-wrap:anywhere;-webkit-box-orient:vertical;font-size:18px;font-weight:650;line-height:1.4;display:-webkit-box;overflow:hidden}
+.qd-card-copy>span{color:#bdc9c1;font-size:14px;line-height:1.5}
+.qd-card-artist .qd-card-copy{margin-top:13px}
+.qd-card:not(.qd-card-artist) .qd-card-copy{position:absolute;bottom:14px;left:18px;right:42px}
+.qd-card:not(.qd-card-artist) .qd-card-copy strong{font-size:24px}
+.qd-card-decade .qd-card-copy strong{font-size:21px}
+.qd-card-arrow{color:#19df70;position:absolute;bottom:26px;right:14px}
+.qd-shade{background:#02070480;position:absolute;inset:0}
+@media (max-width:1000px){.qd-grid-artist{grid-template-columns:repeat(4,minmax(0,1fr))}.qd-grid-genre{grid-template-columns:repeat(2,minmax(0,1fr))}.qd-grid-decade{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){.qd-grid-artist,.qd-grid-decade{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px}.qd-grid-genre{grid-template-columns:minmax(0,1fr)}.qd-card:not(.qd-card-artist) .qd-card-copy strong{font-size:20px}.qd-card-decade .qd-image{aspect-ratio:1.6}}
+
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoGame","name":"Song Guesser","description":"A free Heardle-style song guessing game where you name a track from a 0.1-second clip, then reveal longer clips when you need more.","applicationCategory":"Game","operatingSystem":"Web","url":"https://www.songguesser.co/","playMode":"SinglePlayer","genre":["Music","Trivia"]}
+{"@context":"https://schema.org","@type":"VideoGame","name":"Song Guesser","description":"A free Heardle-style song guessing game where you name a track from a 0.1-second clip, then reveal longer clips when you need more.","applicationCategory":"Game","operatingSystem":"Web","url":"https://www.songguesser.co/","image":"https://www.songguesser.co/images/og.png","playMode":"SinglePlayer","genre":["Music","Trivia"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Song Guesser","url":"https://www.songguesser.co/"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Song Guesser","url":"https://www.songguesser.co/","potentialAction":{"@type":"SearchAction","target":"https://www.songguesser.co/?q={search_term_string}","query-input":"required name=search_term_string"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Song Guesser","url":"https://www.songguesser.co/"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What makes Song Guesser a song guessing game worth playing?","acceptedAnswer":{"@type":"Answer","text":"It strips the format to its core — a song guessing game where a tenth of a second is your only starting clue. No dates, no artwork, no trivia: just sound, then your answer."}},{"@type":"Question","name":"How do I guess music when I can barely hear it?","acceptedAnswer":{"@type":"Answer","text":"You lean on the most recognizable part of a recording: the first strike of a drum, the texture of a voice, the room behind the mix. That is how people guess music from a sliver — the ear reads the fingerprint before the brain can name it."}},{"@type":"Question","name":"Can I really guess the song name in 0.1 seconds?","acceptedAnswer":{"@type":"Answer","text":"Yes, and it is the whole point. A round opens on a tenth of a second and you try to guess the song name before the clip grows to 0.5s, 2s, 8s, then 15s. The shorter the clip you beat, the sharper the guess."}},{"@type":"Question","name":"Guess dat song — what if I only know the hook, not the title?","acceptedAnswer":{"@type":"Answer","text":"That is exactly the skill the game trains. Type the few letters you do remember and pick from the suggestions; the title is all that counts, and the artist, album or year never do."}},{"@type":"Question","name":"What makes music guessable, and why are some tracks harder?","acceptedAnswer":{"@type":"Answer","text":"Guessable music has a strong fingerprint — a drum fill, a breath at the mic, a synth patch that opens the track. Rarer and smoother productions are harder, which is why the difficulty dial runs Easy to Impossible, so you choose how guessable the round should be."}}]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.songguesser.co/"}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where can I guess song names online for free?","acceptedAnswer":{"@type":"Answer","text":"Right here. Song Guesser runs free in your browser with no signup, no download and no daily limit. Press play, hear the clip, and type the title the moment you know it."}},{"@type":"Question","name":"What makes Song Guesser a song guessing game worth playing?","acceptedAnswer":{"@type":"Answer","text":"It strips the format to its core — a song guessing game where a tenth of a second is your only starting clue. No dates, no artwork, no trivia: just sound, then your answer."}},{"@type":"Question","name":"Guess dat song — what if I only know the hook, not the title?","acceptedAnswer":{"@type":"Answer","text":"That is exactly the skill the game trains. Type the few letters you do remember and pick from the suggestions; the title is all that counts, and the artist, album or year never do."}},{"@type":"Question","name":"Which songs and artists are in Song Guesser?","acceptedAnswer":{"@type":"Answer","text":"The catalog spans eight genres (Pop through Metal), five decades (1980s to 2020s), and 35 featured artists such as Taylor Swift, Michael Jackson and Drake, each with their own quiz."}},{"@type":"Question","name":"Can I really guess the song name in 0.1 seconds?","acceptedAnswer":{"@type":"Answer","text":"Yes, and it is the whole point. A round opens on a tenth of a second and you try to guess the song name before the clip grows to 0.5s, 2s, 8s, then 15s. The shorter the clip you beat, the sharper the guess."}},{"@type":"Question","name":"What can you hear in 0.1 seconds of a song?","acceptedAnswer":{"@type":"Answer","text":"No tune and no word — at 120 beats per minute a tenth of a second is shorter than a sixteenth note, so the melody hasn't started. You catch the recording's own character instead: the instrument and production sound that marks this exact version of the track."}},{"@type":"Question","name":"What do Easy, Medium, Hard, Expert and Impossible mean?","acceptedAnswer":{"@type":"Answer","text":"They change the song pool, not the rules. Easy pulls the songs everyone knows at a party, Impossible draws the deep cuts that stump even people who think they've heard everything, and the levels in between just make the field rarer."}},{"@type":"Question","name":"How do I guess music when I can barely hear it?","acceptedAnswer":{"@type":"Answer","text":"You lean on the most recognizable part of a recording: the first strike of a drum, the texture of a voice, the room behind the mix. That is how people guess music from a sliver — the ear reads the fingerprint before the brain can name it."}},{"@type":"Question","name":"What is a song name guessing game?","acceptedAnswer":{"@type":"Answer","text":"It is a game that plays you a short piece of a real song and asks you to name the track. Song Guesser opens every round on a tenth of a second, so you name it from the barest sliver of audio, then reveal longer clips only when you are stuck."}},{"@type":"Question","name":"What makes music guessable, and why are some tracks harder?","acceptedAnswer":{"@type":"Answer","text":"Guessable music has a strong fingerprint — a drum fill, a breath at the mic, a synth patch that opens the track. Rarer and smoother productions are harder, which is why the difficulty dial runs Easy to Impossible, so you choose how guessable the round should be."}}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Song Guesser","url":"https://www.songguesser.co/","logo":{"@type":"ImageObject","url":"https://www.songguesser.co/images/logo.png","width":512,"height":512}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Browse song quizzes by artist, genre and decade","itemListOrder":"https://schema.org/ItemListOrderAscending","numberOfItems":48,"itemListElement":[{"@type":"ListItem","position":1,"name":"Pop","url":"/guessable-songs/pop/"},{"@type":"ListItem","position":2,"name":"Rock","url":"/guessable-songs/rock/"},{"@type":"ListItem","position":3,"name":"Hip-Hop","url":"/guessable-songs/hip-hop/"},{"@type":"ListItem","position":4,"name":"R&amp;B","url":"/guessable-songs/r-and-b/"},{"@type":"ListItem","position":5,"name":"K-Pop","url":"/guessable-songs/k-pop/"},{"@type":"ListItem","position":6,"name":"Electronic","url":"/guessable-songs/electronic/"},{"@type":"ListItem","position":7,"name":"Country","url":"/guessable-songs/country/"},{"@type":"ListItem","position":8,"name":"Metal","url":"/guessable-songs/metal/"},{"@type":"ListItem","position":9,"name":"1980s","url":"/guess-song-decades/1980s/"},{"@type":"ListItem","position":10,"name":"1990s","url":"/guess-song-decades/1990s/"},{"@type":"ListItem","position":11,"name":"2000s","url":"/guess-song-decades/2000s/"},{"@type":"ListItem","position":12,"name":"2010s","url":"/guess-song-decades/2010s/"},{"@type":"ListItem","position":13,"name":"2020s","url":"/guess-song-decades/2020s/"},{"@type":"ListItem","position":14,"name":"Taylor Swift","url":"/song-guesser-artists/taylor-swift/"},{"@type":"ListItem","position":15,"name":"Michael Jackson","url":"/song-guesser-artists/michael-jackson/"},{"@type":"ListItem","position":16,"name":"Beyoncé","url":"/song-guesser-artists/beyonce/"},{"@type":"ListItem","position":17,"name":"Rihanna","url":"/song-guesser-artists/rihanna/"},{"@type":"ListItem","position":18,"name":"Drake","url":"/song-guesser-artists/drake/"},{"@type":"ListItem","position":19,"name":"Eminem","url":"/song-guesser-artists/eminem/"},{"@type":"ListItem","position":20,"name":"Kanye West","url":"/song-guesser-artists/kanye-west/"},{"@type":"ListItem","position":21,"name":"Justin Bieber","url":"/song-guesser-artists/justin-bieber/"},{"@type":"ListItem","position":22,"name":"The Weeknd","url":"/song-guesser-artists/the-weeknd/"},{"@type":"ListItem","position":23,"name":"Linkin Park","url":"/song-guesser-artists/linkin-park/"},{"@type":"ListItem","position":24,"name":"Lady Gaga","url":"/song-guesser-artists/lady-gaga/"},{"@type":"ListItem","position":25,"name":"Bruno Mars","url":"/song-guesser-artists/bruno-mars/"},{"@type":"ListItem","position":26,"name":"Adele","url":"/song-guesser-artists/adele/"},{"@type":"ListItem","position":27,"name":"Ariana Grande","url":"/song-guesser-artists/ariana-grande/"},{"@type":"ListItem","position":28,"name":"Billie Eilish","url":"/song-guesser-artists/billie-eilish/"},{"@type":"ListItem","position":29,"name":"Ed Sheeran","url":"/song-guesser-artists/ed-sheeran/"},{"@type":"ListItem","position":30,"name":"Coldplay","url":"/song-guesser-artists/coldplay/"},{"@type":"ListItem","position":31,"name":"BTS","url":"/song-guesser-artists/bts/"},{"@type":"ListItem","position":32,"name":"BLACKPINK","url":"/song-guesser-artists/blackpink/"},{"@type":"ListItem","position":33,"name":"G-DRAGON","url":"/song-guesser-artists/gdragon/"},{"@type":"ListItem","position":34,"name":"David Guetta","url":"/song-guesser-artists/david-guetta/"},{"@type":"ListItem","position":35,"name":"Pitbull","url":"/song-guesser-artists/pitbull/"},{"@type":"ListItem","position":36,"name":"Kendrick Lamar","url":"/song-guesser-artists/kendrick-lamar/"},{"@type":"ListItem","position":37,"name":"Olivia Rodrigo","url":"/song-guesser-artists/olivia-rodrigo/"},{"@type":"ListItem","position":38,"name":"Lana Del Rey","url":"/song-guesser-artists/lana-del-rey/"},{"@type":"ListItem","position":39,"name":"Maroon 5","url":"/song-guesser-artists/maroon-5/"},{"@type":"ListItem","position":40,"name":"Shakira","url":"/song-guesser-artists/shakira/"},{"@type":"ListItem","position":41,"name":"Travis Scott","url":"/song-guesser-artists/travis-scott/"},{"@type":"ListItem","position":42,"name":"Sabrina Carpenter","url":"/song-guesser-artists/sabrina-carpenter/"},{"@type":"ListItem","position":43,"name":"Anuel AA","url":"/song-guesser-artists/anuel-aa/"},{"@type":"ListItem","position":44,"name":"Don Toliver","url":"/song-guesser-artists/don-toliver/"},{"@type":"ListItem","position":45,"name":"Tate McRae","url":"/song-guesser-artists/tate-mcrae/"},{"@type":"ListItem","position":46,"name":"Playboi Carti","url":"/song-guesser-artists/playboi-carti/"},{"@type":"ListItem","position":47,"name":"Bad Bunny","url":"/song-guesser-artists/bad-bunny/"},{"@type":"ListItem","position":48,"name":"Katy Perry","url":"/song-guesser-artists/katy-perry/"}]}
 </script>
 </head>
 <body>
@@ -562,11 +622,53 @@ button{font-family:inherit}
 
   <section id="recognition" class="songspot-seo-section">
     <div class="songspot-seo-heading">
-      <p class="songspot-seo-eyebrow">An ear, not a search bar</p>
-      <h2>Why can 0.1 seconds be enough?</h2>
-      <p>In Song Guesser, a tenth of a second carries no lyric and no full melody. But a recording you know has a fingerprint: the attack of a snare, the grain of a voice, the size of the room, the exact timbre of a synth. Any one of those can fire the answer before you can put it into words. Longer clips don't add anything new — they just repeat what the first instant already told you, rhythm then harmony then the melody itself.</p>
-      <p>That is why Song Guesser starts every round easy and lets you climb. New ears warm up on widely known hooks, then work toward rarer tracks as their recognition sharpens. Five difficulty levels mean a casual listener and a serious one can play the same <a href="#play">song guesser</a> without sharing the same catalog.</p>
+      <p class="songspot-seo-eyebrow">Sound before words</p>
+      <h2>Why can you guess the song in 0.1 seconds?</h2>
+      <p>Song Guesser hands you a tenth of a second: no lyrics, no full melody. But a track you know carries a signature — the snare's attack, the grain of a voice, how big the room sounds, the synth's exact timbre. Any one of those can name the song before you say it. A longer clip adds nothing. It just repeats what that first instant already told you: rhythm, harmony, and the melody only at the end.</p>
     </div>
+
+    <div class="songspot-seo-heading">
+      <h3>What's actually in 0.1 seconds of a song?</h3>
+      <p>Less than a note. At 120 beats per minute one beat lasts half a second, so a tenth of a second is a fifth of a beat — shorter than a sixteenth note and about the length of a single syllable. No melody and no word can fit inside it.</p>
+      <p>What survives is <strong>timbre</strong>: the sound of this exact recording, not the song as written. The instruments, the voice, the way it was produced. A cover can't reproduce it.</p>
+      <ul class="songspot-timeline">
+        <li><strong>December 1999</strong> — Schellenberg, Iverson &amp; McKinnon (<em>Psychonomic Bulletin &amp; Review</em>) asked listeners to match five hit-song clips to a list of five titles. On 0.2-second clips, 19 of 20 beat chance; on 0.1-second clips, everyone still beat chance. Reversed, or with everything above 1000 Hz removed, they dropped back to guessing. The caveat the authors wrote out plainly: the songs were few and known in advance, and people don't normally name a song from this little.</li>
+        <li><strong>June 2010</strong> — Krumhansl (<em>Music Perception</em>) had Cornell students name artist and title from 0.4-second clips of 1960s-to-2000s hits, and they got it right 26.4% of the time. Cut the clip to 0.3 seconds and accuracy fell to 11.1%. An open answer is far harder than five choices.</li>
+        <li><strong>June 2014</strong> — a study in the <em>Journal of the Acoustical Society of America</em> found listeners can tell a voice from an instrument in clips only a few thousandths of a second long. Timbre is read that fast.</li>
+        <li><strong>2019</strong> — a University College London team tracked pupils as people heard songs they knew. The eye reacted 0.1–0.3 seconds after the first sound, before the listener could name anything.</li>
+      </ul>
+      <p>That last number is the one the game runs on. A tenth of a second sits at the very edge of what your ears register, which is why the clip grows — 0.5s, 2s, 8s, 15s — and you name it the moment your hunch turns solid.</p>
+      <p>That's why every round opens easy and climbs. Start on songs everyone knows, then reach for rarer cuts once your ear catches up. Five levels mean a casual listener and a deep-cut fan can both play without sharing a song pool.</p>
+    </div>
+  </section>
+
+  <section id="method" class="songspot-seo-section">
+    <div class="songspot-seo-heading">
+      <p class="songspot-seo-eyebrow">A listening method</p>
+      <h2>How to get better at the 0.1-second guess</h2>
+      <p>Do these four things before you press play.</p>
+    </div>
+    <ol class="songspot-how-grid">
+      <li><span>01</span><span class="icon">👂</span><h3>Know it before you name it</h3><p>Ask "have I heard this?" first, not "what is this?" A yes narrows the field to songs you actually know; a no tells you to widen instead of guessing blind.</p></li>
+      <li><span>02</span><span class="icon">🎧</span><h3>Listen to the top of the sound</h3><p>There's no melody in the first sliver, so don't wait for one. The onset carries the whole identity: the drummer's strike, where the voice sits in the mix, how far away the room feels. Read that, not the tune.</p></li>
+      <li><span>03</span><span class="icon">🎤</span><h3>Wait for a syllable</h3><p>Most voices give the singer away in the first word. If nothing sings, lean on the synth or guitar tone instead.</p></li>
+      <li><span>04</span><span class="icon">⏫</span><h3>Widen in small steps</h3><p>Move 0.1s to 0.5s to 2s, not straight to 15s. Each step is cheap and either confirms your hunch or kills it.</p></li>
+    </ol>
+  </section>
+
+  <section id="inside" class="songspot-seo-section songspot-seo-intro">
+    <div class="songspot-seo-copy">
+      <p class="songspot-seo-eyebrow">The library, by the numbers</p>
+      <h2>Inside Song Guesser</h2>
+      <p>One catalog, three ways to slice it — and every round still opens on 0.1 seconds.</p>
+    </div>
+    <dl class="songspot-seo-stats">
+      <div><dt>8</dt><dd>genres, from Pop to Metal</dd></div>
+      <div><dt>5</dt><dd>decades, 1980s to 2020s</dd></div>
+      <div><dt>35</dt><dd>artists with dedicated quizzes</dd></div>
+      <div><dt>5</dt><dd>difficulty levels, Easy to Impossible</dd></div>
+      <div><dt>0.1s</dt><dd>where every round opens</dd></div>
+    </dl>
   </section>
 
   <section id="features" class="songspot-seo-section">
@@ -577,7 +679,7 @@ button{font-family:inherit}
     </div>
     <div class="songspot-feature-grid">
       <article><span class="icon">🎵</span><h3>Reveals on your terms</h3><p>Song Guesser opens on a tenth of a second and grows the clip only when you ask. Sit in the hard part as long as you like — it never forces more audio on you.</p></article>
-      <article><span class="icon">🎚️</span><h3>Easy to Impossible</h3><p>Song Guesser changes the pool, not the rules, across five levels. Easy is the song everyone knows at a party; Impossible is the one that humbles the person who thinks they've heard everything.</p></article>
+      <article><span class="icon">🎚️</span><h3>Easy to Impossible</h3><p>Five levels, one rulebook. Song Guesser only changes which records you hear, from the hits everyone can hum at Easy to the obscure tracks that separate collectors from casual fans at Impossible.</p></article>
       <article><span class="icon">🎛️</span><h3>Play your music</h3><p>Song Guesser lets you filter by genre or artist and guess the songs you actually know. Staying in one lane is how you go from "I've heard this" to naming it instantly.</p></article>
       <article><span class="icon">♾️</span><h3>No daily gate</h3><p>Song Guesser is free in the browser — unlimited rounds, no app, no login, and no reset waiting for you at midnight.</p></article>
       <article><span class="icon">🔍</span><h3>Type, don't spell</h3><p>A few letters bring up the title, so you stay in Song Guesser instead of stuck in a search box trying to spell "Eurythmics".</p></article>
@@ -585,17 +687,106 @@ button{font-family:inherit}
     </div>
   </section>
 
-  <section id="faq" class="songspot-seo-section songspot-seo-faq">
+    <section id="browse" class="songspot-seo-section">
+    <div class="songspot-seo-heading">
+      <p class="songspot-seo-eyebrow">Pick a lane</p>
+      <h2>Browse Song Quizzes by Artist, Genre or Decade</h2>
+      <p>Every card below opens a dedicated song quiz — a catalog of tracks you know, played back in tenth-of-a-second slivers.</p>
+    </div>
+<section class="qd-section" data-cat="genre" aria-label="Genres">
+    <h3>Genres</h3>
+    <div class="qd-grid qd-grid-genre">
+      <a href="/guessable-songs/pop/" class="qd-card qd-card-genre"><span class="qd-image"><img src="/images/cards/genre-pop.svg" alt="Pop" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>Pop</strong><span>1046 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guessable-songs/rock/" class="qd-card qd-card-genre"><span class="qd-image"><img src="/images/cards/genre-rock.svg" alt="Rock" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>Rock</strong><span>672 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guessable-songs/hip-hop/" class="qd-card qd-card-genre"><span class="qd-image"><img src="/images/cards/genre-hip-hop.svg" alt="Hip-Hop" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>Hip-Hop</strong><span>631 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guessable-songs/r-and-b/" class="qd-card qd-card-genre"><span class="qd-image"><img src="/images/cards/genre-r-and-b.svg" alt="R&amp;B" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>R&amp;B</strong><span>801 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guessable-songs/k-pop/" class="qd-card qd-card-genre"><span class="qd-image"><img src="/images/cards/genre-k-pop.svg" alt="K-Pop" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>K-Pop</strong><span>796 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guessable-songs/electronic/" class="qd-card qd-card-genre"><span class="qd-image"><img src="/images/cards/genre-electronic.svg" alt="Electronic" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>Electronic</strong><span>677 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guessable-songs/country/" class="qd-card qd-card-genre"><span class="qd-image"><img src="/images/cards/genre-country.svg" alt="Country" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>Country</strong><span>483 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guessable-songs/metal/" class="qd-card qd-card-genre"><span class="qd-image"><img src="/images/cards/genre-metal.svg" alt="Metal" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>Metal</strong><span>400 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </section>
+<section class="qd-section" data-cat="decade" aria-label="Decades">
+    <div class="qd-section-head">
+      <h3>Decades</h3>
+      <a href="/guess-song-decades/">View all decades<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+    <div class="qd-grid qd-grid-decade">
+      <a href="/guess-song-decades/1980s/" class="qd-card qd-card-decade"><span class="qd-image"><img src="/images/cards/decade-1980s.svg" alt="1980s" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>1980s</strong><span>103 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guess-song-decades/1990s/" class="qd-card qd-card-decade"><span class="qd-image"><img src="/images/cards/decade-1990s.svg" alt="1990s" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>1990s</strong><span>133 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guess-song-decades/2000s/" class="qd-card qd-card-decade"><span class="qd-image"><img src="/images/cards/decade-2000s.svg" alt="2000s" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>2000s</strong><span>204 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guess-song-decades/2010s/" class="qd-card qd-card-decade"><span class="qd-image"><img src="/images/cards/decade-2010s.svg" alt="2010s" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>2010s</strong><span>313 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="/guess-song-decades/2020s/" class="qd-card qd-card-decade"><span class="qd-image"><img src="/images/cards/decade-2020s.svg" alt="2020s" width="800" height="320" loading="lazy" /><span class="qd-shade"></span></span><span class="qd-card-copy"><strong>2020s</strong><span>105 playable songs</span></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qd-card-arrow" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </section>
+<section class="qd-section" data-cat="artist" aria-label="Featured artists">
+    <div class="qd-section-head">
+      <h3>Featured artists</h3>
+      <button type="button">View all artists
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </button>
+    </div>
+    <div class="qd-grid qd-grid-artist">
+      <a href="/song-guesser-artists/taylor-swift/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/taylor-swift.jpg" alt="Taylor Swift" width="320" height="320" loading="eager" /></span><span class="qd-card-copy"><strong>Taylor Swift</strong><span>74 playable songs</span></span></a>
+      <a href="/song-guesser-artists/michael-jackson/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/michael-jackson.jpg" alt="Michael Jackson" width="320" height="320" loading="eager" /></span><span class="qd-card-copy"><strong>Michael Jackson</strong><span>70 playable songs</span></span></a>
+      <a href="/song-guesser-artists/beyonce/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/beyonce.jpg" alt="Beyoncé" width="320" height="320" loading="eager" /></span><span class="qd-card-copy"><strong>Beyoncé</strong><span>55 playable songs</span></span></a>
+      <a href="/song-guesser-artists/rihanna/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/rihanna.jpg" alt="Rihanna" width="320" height="320" loading="eager" /></span><span class="qd-card-copy"><strong>Rihanna</strong><span>68 playable songs</span></span></a>
+      <a href="/song-guesser-artists/drake/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/drake.jpg" alt="Drake" width="320" height="320" loading="eager" /></span><span class="qd-card-copy"><strong>Drake</strong><span>69 playable songs</span></span></a>
+      <a href="/song-guesser-artists/eminem/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/eminem.jpg" alt="Eminem" width="320" height="320" loading="eager" /></span><span class="qd-card-copy"><strong>Eminem</strong><span>66 playable songs</span></span></a>
+    </div>
+  </section>
+<section class="qd-section" data-cat="artist" aria-label="More artists">
+    <h3>More artists</h3>
+    <div class="qd-grid qd-grid-artist">
+      <a href="/song-guesser-artists/kanye-west/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/kanye-west.jpg" alt="Kanye West" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Kanye West</strong><span>61 playable songs</span></span></a>
+      <a href="/song-guesser-artists/justin-bieber/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/justin-bieber.jpg" alt="Justin Bieber" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Justin Bieber</strong><span>69 playable songs</span></span></a>
+      <a href="/song-guesser-artists/the-weeknd/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/the-weeknd.jpg" alt="The Weeknd" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>The Weeknd</strong><span>65 playable songs</span></span></a>
+      <a href="/song-guesser-artists/linkin-park/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/linkin-park.jpg" alt="Linkin Park" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Linkin Park</strong><span>67 playable songs</span></span></a>
+      <a href="/song-guesser-artists/lady-gaga/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/lady-gaga.jpg" alt="Lady Gaga" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Lady Gaga</strong><span>69 playable songs</span></span></a>
+      <a href="/song-guesser-artists/bruno-mars/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/bruno-mars.jpg" alt="Bruno Mars" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Bruno Mars</strong><span>62 playable songs</span></span></a>
+      <a href="/song-guesser-artists/adele/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/adele.jpg" alt="Adele" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Adele</strong><span>50 playable songs</span></span></a>
+      <a href="/song-guesser-artists/ariana-grande/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/ariana-grande.jpg" alt="Ariana Grande" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Ariana Grande</strong><span>64 playable songs</span></span></a>
+      <a href="/song-guesser-artists/billie-eilish/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/billie-eilish.jpg" alt="Billie Eilish" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Billie Eilish</strong><span>58 playable songs</span></span></a>
+      <a href="/song-guesser-artists/ed-sheeran/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/ed-sheeran.jpg" alt="Ed Sheeran" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Ed Sheeran</strong><span>70 playable songs</span></span></a>
+      <a href="/song-guesser-artists/coldplay/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/coldplay.jpg" alt="Coldplay" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Coldplay</strong><span>68 playable songs</span></span></a>
+      <a href="/song-guesser-artists/bts/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/bts.jpg" alt="BTS" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>BTS</strong><span>75 playable songs</span></span></a>
+      <a href="/song-guesser-artists/blackpink/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/blackpink.jpg" alt="BLACKPINK" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>BLACKPINK</strong><span>37 playable songs</span></span></a>
+      <a href="/song-guesser-artists/gdragon/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/gdragon.jpg" alt="G-DRAGON" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>G-DRAGON</strong><span>50 playable songs</span></span></a>
+      <a href="/song-guesser-artists/david-guetta/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/david-guetta.jpg" alt="David Guetta" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>David Guetta</strong><span>64 playable songs</span></span></a>
+      <a href="/song-guesser-artists/pitbull/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/pitbull.jpg" alt="Pitbull" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Pitbull</strong><span>68 playable songs</span></span></a>
+      <a href="/song-guesser-artists/kendrick-lamar/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/kendrick-lamar.jpg" alt="Kendrick Lamar" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Kendrick Lamar</strong><span>62 playable songs</span></span></a>
+      <a href="/song-guesser-artists/olivia-rodrigo/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/olivia-rodrigo.jpg" alt="Olivia Rodrigo" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Olivia Rodrigo</strong><span>50 playable songs</span></span></a>
+      <a href="/song-guesser-artists/lana-del-rey/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/lana-del-rey.jpg" alt="Lana Del Rey" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Lana Del Rey</strong><span>52 playable songs</span></span></a>
+      <a href="/song-guesser-artists/maroon-5/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/maroon-5.jpg" alt="Maroon 5" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Maroon 5</strong><span>72 playable songs</span></span></a>
+      <a href="/song-guesser-artists/shakira/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/shakira.jpg" alt="Shakira" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Shakira</strong><span>67 playable songs</span></span></a>
+      <a href="/song-guesser-artists/travis-scott/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/travis-scott.jpg" alt="Travis Scott" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Travis Scott</strong><span>77 playable songs</span></span></a>
+      <a href="/song-guesser-artists/sabrina-carpenter/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/sabrina-carpenter.jpg" alt="Sabrina Carpenter" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Sabrina Carpenter</strong><span>77 playable songs</span></span></a>
+      <a href="/song-guesser-artists/anuel-aa/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/anuel-aa.jpg" alt="Anuel AA" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Anuel AA</strong><span>51 playable songs</span></span></a>
+      <a href="/song-guesser-artists/don-toliver/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/don-toliver.jpg" alt="Don Toliver" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Don Toliver</strong><span>65 playable songs</span></span></a>
+      <a href="/song-guesser-artists/tate-mcrae/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/tate-mcrae.jpg" alt="Tate McRae" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Tate McRae</strong><span>66 playable songs</span></span></a>
+      <a href="/song-guesser-artists/playboi-carti/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/playboi-carti.jpg" alt="Playboi Carti" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Playboi Carti</strong><span>28 playable songs</span></span></a>
+      <a href="/song-guesser-artists/bad-bunny/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/bad-bunny.jpg" alt="Bad Bunny" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Bad Bunny</strong><span>56 playable songs</span></span></a>
+      <a href="/song-guesser-artists/katy-perry/" class="qd-card qd-card-artist"><span class="qd-image"><img src="/images/artists/katy-perry.jpg" alt="Katy Perry" width="320" height="320" loading="lazy" /></span><span class="qd-card-copy"><strong>Katy Perry</strong><span>59 playable songs</span></span></a>
+    </div>
+  </section>
+</section>
+
+<section id="faq" class="songspot-seo-section songspot-seo-faq">
     <div class="songspot-seo-heading">
       <p class="songspot-seo-eyebrow">Before you press play</p>
       <h2>Song Guesser Music Quiz FAQ</h2>
       <p>The short version, so your first clip isn't your first question.</p>
     </div>
     <div class="songspot-faq-list">
-<details open><summary>What makes Song Guesser a song guessing game worth playing?</summary><p>It strips the format to its core — a song guessing game where a tenth of a second is your only starting clue. No dates, no artwork, no trivia: just sound, then your answer.</p></details>
-<details><summary>How do I guess music when I can barely hear it?</summary><p>You lean on the most recognizable part of a recording: the first strike of a drum, the texture of a voice, the room behind the mix. That is how people guess music from a sliver — the ear reads the fingerprint before the brain can name it.</p></details>
-<details><summary>Can I really guess the song name in 0.1 seconds?</summary><p>Yes, and it is the whole point. A round opens on a tenth of a second and you try to guess the song name before the clip grows to 0.5s, 2s, 8s, then 15s. The shorter the clip you beat, the sharper the guess.</p></details>
+<details open><summary>Where can I guess song names online for free?</summary><p>Right here. Song Guesser runs free in your browser with no signup, no download and no daily limit. Press play, hear the clip, and type the title the moment you know it.</p></details>
+<details><summary>What makes Song Guesser a song guessing game worth playing?</summary><p>It strips the format to its core — a song guessing game where a tenth of a second is your only starting clue. No dates, no artwork, no trivia: just sound, then your answer.</p></details>
 <details><summary>Guess dat song — what if I only know the hook, not the title?</summary><p>That is exactly the skill the game trains. Type the few letters you do remember and pick from the suggestions; the title is all that counts, and the artist, album or year never do.</p></details>
+<details><summary>Which songs and artists are in Song Guesser?</summary><p>The catalog spans eight genres (Pop through Metal), five decades (1980s to 2020s), and 35 featured artists such as Taylor Swift, Michael Jackson and Drake, each with their own quiz.</p></details>
+<details><summary>Can I really guess the song name in 0.1 seconds?</summary><p>Yes, and it is the whole point. A round opens on a tenth of a second and you try to guess the song name before the clip grows to 0.5s, 2s, 8s, then 15s. The shorter the clip you beat, the sharper the guess.</p></details>
+<details><summary>What can you hear in 0.1 seconds of a song?</summary><p>No tune and no word — at 120 beats per minute a tenth of a second is shorter than a sixteenth note, so the melody hasn't started. You catch the recording's own character instead: the instrument and production sound that marks this exact version of the track.</p></details>
+<details><summary>What do Easy, Medium, Hard, Expert and Impossible mean?</summary><p>They change the song pool, not the rules. Easy pulls the songs everyone knows at a party, Impossible draws the deep cuts that stump even people who think they've heard everything, and the levels in between just make the field rarer.</p></details>
+<details><summary>How do I guess music when I can barely hear it?</summary><p>You lean on the most recognizable part of a recording: the first strike of a drum, the texture of a voice, the room behind the mix. That is how people guess music from a sliver — the ear reads the fingerprint before the brain can name it.</p></details>
+<details><summary>What is a song name guessing game?</summary><p>It is a game that plays you a short piece of a real song and asks you to name the track. Song Guesser opens every round on a tenth of a second, so you name it from the barest sliver of audio, then reveal longer clips only when you are stuck.</p></details>
 <details><summary>What makes music guessable, and why are some tracks harder?</summary><p>Guessable music has a strong fingerprint — a drum fill, a breath at the mic, a synth patch that opens the track. Rarer and smoother productions are harder, which is why the difficulty dial runs Easy to Impossible, so you choose how guessable the round should be.</p></details>
     </div>
   </section>
